@@ -11,6 +11,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Bug #1: Initially, upon launching the app, there was a blank black screen.  The StoryBoard had not been set as the Main Interface in the project settings.
+    
     return YES;
 }
 
