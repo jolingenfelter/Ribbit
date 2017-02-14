@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-nl-vFc">
-                                <rect key="frame" x="20" y="180.5" width="179" height="20.5"/>
+                                <rect key="frame" x="20" y="262" width="179" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,11 +93,10 @@
                             <constraint firstAttribute="trailing" secondItem="cZF-ds-FrG" secondAttribute="trailing" constant="34" id="Vy0-mi-gZV"/>
                             <constraint firstItem="ZQC-BI-gMf" firstAttribute="top" secondItem="LtO-lO-faO" secondAttribute="bottom" constant="8" symbolic="YES" id="X2G-Ij-0lH"/>
                             <constraint firstItem="LtO-lO-faO" firstAttribute="leading" secondItem="TnU-aj-axw" secondAttribute="leading" constant="20" symbolic="YES" id="bN3-42-ZQG"/>
-                            <constraint firstItem="XUF-nl-vFc" firstAttribute="top" secondItem="ZQC-BI-gMf" secondAttribute="bottom" constant="8" symbolic="YES" id="bnP-Vg-sHI"/>
                             <constraint firstAttribute="trailing" secondItem="ZQC-BI-gMf" secondAttribute="trailing" constant="20" symbolic="YES" id="kww-je-3bh"/>
                             <constraint firstItem="NRF-Ak-4Dc" firstAttribute="leading" secondItem="TnU-aj-axw" secondAttribute="leading" constant="20" symbolic="YES" id="lLg-SX-fCb"/>
+                            <constraint firstItem="XUF-nl-vFc" firstAttribute="centerY" secondItem="cZF-ds-FrG" secondAttribute="centerY" id="tO5-XP-b4n"/>
                             <constraint firstItem="LtO-lO-faO" firstAttribute="top" secondItem="NRF-Ak-4Dc" secondAttribute="bottom" constant="8" symbolic="YES" id="ygs-IK-S4H"/>
-                            <constraint firstItem="XUF-nl-vFc" firstAttribute="baseline" secondItem="ZQC-BI-gMf" secondAttribute="baseline" id="ze2-Xd-d0c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ribbit" id="Xza-Tr-b7l"/>
