@@ -14,6 +14,8 @@
 
 @implementation LoginViewController
 
+// Bug #3: Fixed constraint issue in this VC.  Constraints are set in the storyBoard.
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
