@@ -40,7 +40,9 @@ static NSInteger identifier = 1;
 }
 
 - (void)addFriend:(User *)friend {
-  [self.friendsMutable addObject:friend];
+    if (![self.friends containsObject:friend]) {
+        [self.friendsMutable addObject:friend];
+    }
 }
 
 - (void)removeFriend:(User *)friend {
@@ -50,7 +52,7 @@ static NSInteger identifier = 1;
 }
 
 - (NSArray*) friends {
-  return self.friendsMutable;
+    return self.friendsMutable;
 }
 
 

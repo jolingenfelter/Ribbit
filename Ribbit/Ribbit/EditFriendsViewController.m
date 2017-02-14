@@ -25,7 +25,7 @@
 }
 
 - (NSArray *)allUsers {
-  return [[App currentApp] allUsers];
+  return [App allUsers];
 }
 
 #pragma mark - Table view data source
