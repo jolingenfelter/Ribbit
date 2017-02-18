@@ -143,11 +143,17 @@
 
 - (IBAction)send:(id)sender {
     if (self.image == nil && [self.videoFilePath length] == 0) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Try again!"
-                                                            message:@"Please capture or select a photo or video to share!"
-                                                           delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alertView show];
-        [self presentViewController:self.imagePicker animated:NO completion:nil];
+        
+        // Bug #6: Update API's -- Use UIAlertController instead of UIAlertView
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Try again!" message: @"Please capture or select a photo or video to share!" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alert addAction:okAction];
+        
+        [self presentViewController:alert animated:true completion:nil];
+        [self presentViewController:alert animated:false completion:nil];
     }
     else {
         [self uploadMessage];
