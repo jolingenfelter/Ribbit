@@ -21,8 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.moviePlayer = [[MPMoviePlayerController alloc] init];
+    
+    // BUG #6: Update API used for playing videos
+    self.moviePlayer = [[AVPlayerViewController alloc] init];
     
     User *currentUser = [User currentUser];
     if (currentUser) {
@@ -81,14 +82,15 @@
     }
     else {
         // File type is video
+        
+        // BUG #6: Update API used for playing videos
+        
         File *videoFile = self.selectedMessage.file;
-        self.moviePlayer.contentURL = videoFile.fileURL;
-        [self.moviePlayer prepareToPlay];
-        [self.moviePlayer thumbnailImageAtTime:0 timeOption:MPMovieTimeOptionNearestKeyFrame];
+        self.moviePlayer.player = [AVPlayer playerWithURL:videoFile.fileURL];
         
         // Add it to the view controller so we can see it
-        [self.view addSubview:self.moviePlayer.view];
-        [self.moviePlayer setFullscreen:YES animated:YES];
+        self.moviePlayer.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:self.moviePlayer animated:true completion:nil];
     }
     
     // Delete it!
