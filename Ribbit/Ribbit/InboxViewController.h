@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-// BUG #6: Update API used for playing videos
+// Bug #6: Update API used for playing videos
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 
@@ -18,7 +18,7 @@
 
 @property (nonatomic, strong) Message *selectedMessage;
 
-// BUG #6: Update API used for playing videos
+// Bug #6: Update API used for playing videos
 @property (nonatomic, strong) AVPlayerViewController *moviePlayer;
 
 - (IBAction)logout:(id)sender;

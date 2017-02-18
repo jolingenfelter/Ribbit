@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     
-    // BUG #6: Update API used for playing videos
+    // Bug #6: Update API used for playing videos
     self.moviePlayer = [[AVPlayerViewController alloc] init];
     
     User *currentUser = [User currentUser];
@@ -83,7 +83,7 @@
     else {
         // File type is video
         
-        // BUG #6: Update API used for playing videos
+        // Bug #6: Update API used for playing videos
         
         File *videoFile = self.selectedMessage.file;
         self.moviePlayer.player = [AVPlayer playerWithURL:videoFile.fileURL];
