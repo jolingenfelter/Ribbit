@@ -27,10 +27,16 @@
     NSString *email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     if ([username length] == 0 || [password length] == 0 || [email length] == 0) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!"
-                                                            message:@"Make sure you enter a username, password, and email address!"
-                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alertView show];
+        
+        // Bug #6: Update API's -- Use UIAlertController instead of UIAlertView
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Oops!" message:@"Make sure you enter a username, password, and email address!" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alert addAction: okAction];
+        
+        [self presentViewController:alert animated:true completion:nil];
     }
     else {
         User *newUser = [User currentUser];
