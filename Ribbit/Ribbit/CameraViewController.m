@@ -163,7 +163,10 @@
     NSString *fileType;
     
     if (self.image != nil) {
-        UIImage *newImage = self.image;
+        
+        // Bug #5: I struggled a lot with this bug and eventually reached out to another student that had already completed this project.  Using instruments, I wasn't finding a leak.  What exactly was the problem, how do you find it, and how does this solve it?  Thanks!
+        
+        UIImage *newImage = [self resizeImage:self.image toWidth:100 andHeight:100];
         fileData = UIImagePNGRepresentation(newImage);
         fileName = [NSString stringWithFormat:@"%f.png",[NSDate timeIntervalSinceReferenceDate]];
         fileType = @"image";
