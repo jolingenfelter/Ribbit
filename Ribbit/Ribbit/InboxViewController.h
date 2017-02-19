@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "User.h"
 
 // Bug #6: Update API used for playing videos
 #import <AVKit/AVKit.h>
@@ -20,6 +21,9 @@
 
 // Bug #6: Update API used for playing videos
 @property (nonatomic, strong) AVPlayerViewController *moviePlayer;
+
+// Display Login VC initially
+@property (nonatomic, strong) User *currentUser;
 
 - (IBAction)logout:(id)sender;
 

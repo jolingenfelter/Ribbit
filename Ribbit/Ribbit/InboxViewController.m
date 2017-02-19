@@ -25,9 +25,8 @@
     // Bug #6: Update API used for playing videos
     self.moviePlayer = [[AVPlayerViewController alloc] init];
     
-    User *currentUser = [User currentUser];
-    if (currentUser) {
-        NSLog(@"Current user: %@", currentUser.username);
+    if (self.currentUser) {
+        NSLog(@"Current user: %@", self.currentUser.username);
     }
     else {
         [self performSegueWithIdentifier:@"showLogin" sender:self];
