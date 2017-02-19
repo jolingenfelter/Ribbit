@@ -13,6 +13,19 @@
 {
     // Bug #1: Initially, upon launching the app, there was a blank black screen.  The StoryBoard had not been set as the Main Interface in the project settings.
     
+    // Tab bar appearance
+    [[UITabBar appearance] setTintColor: [UIColor whiteColor]];
+    [[UITabBarItem appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]} forState:UIControlStateNormal];
+    
+    // NavBar appearance
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:160/255.0 green:133/255.0 blue:197/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    UIImage *backImage = [[UIImage imageNamed:@"buttonBack"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    UIImage *barButtonImage = [[UIImage imageNamed:@"buttonUnselected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
+    [[UIBarButtonItem appearance] setBackgroundImage:barButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 
