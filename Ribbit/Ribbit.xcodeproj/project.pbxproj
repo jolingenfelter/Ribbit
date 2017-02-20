@@ -34,10 +34,10 @@
 		8DCDADF017A82EC7008AAA28 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDADEF17A82EC7008AAA28 /* SignupViewController.m */; };
 		8DCDADF317A82EEB008AAA28 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDADF217A82EEB008AAA28 /* LoginViewController.m */; };
 		8DCDADF617A83853008AAA28 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDADF517A83852008AAA28 /* InboxViewController.m */; };
+		9E8044A11E5A857D00FA4936 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8044A01E5A857D00FA4936 /* ImageAssets.xcassets */; };
 		9EABDBD91E59019300089D5E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EABDBD81E59019300089D5E /* VideoToolbox.framework */; };
 		9EABDBDB1E5901A200089D5E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EABDBDA1E5901A200089D5E /* AVKit.framework */; };
 		9EABDBDD1E5901BA00089D5E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EABDBDC1E5901BA00089D5E /* AVFoundation.framework */; };
-		9EC23A011E59F23400BCAAAA /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC23A001E59F23400BCAAAA /* ImageAssets.xcassets */; };
 		B35A3F481D7EE8050082EF0C /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A3F471D7EE8050082EF0C /* App.m */; };
 		B3EB1F0C1D6DBA1B00B5FDAD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB1F0B1D6DBA1B00B5FDAD /* User.m */; };
 		B3EB1F0F1D6F034A00B5FDAD /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB1F0E1D6F034A00B5FDAD /* File.m */; };
@@ -83,10 +83,10 @@
 		8DCDADF217A82EEB008AAA28 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8DCDADF417A83852008AAA28 /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
 		8DCDADF517A83852008AAA28 /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		9E8044A01E5A857D00FA4936 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ImageAssets.xcassets; path = Ribbit/ImageAssets.xcassets; sourceTree = SOURCE_ROOT; };
 		9EABDBD81E59019300089D5E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		9EABDBDA1E5901A200089D5E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		9EABDBDC1E5901BA00089D5E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9EC23A001E59F23400BCAAAA /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ImageAssets.xcassets; path = ../ImageAssets.xcassets; sourceTree = "<group>"; };
 		B35A3F461D7EE8050082EF0C /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		B35A3F471D7EE8050082EF0C /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
 		B3EB1F0A1D6DBA1B00B5FDAD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				8DCDADF217A82EEB008AAA28 /* LoginViewController.m */,
 				8DCDADEE17A82EC7008AAA28 /* SignupViewController.h */,
 				8DCDADEF17A82EC7008AAA28 /* SignupViewController.m */,
-				9EC23A001E59F23400BCAAAA /* ImageAssets.xcassets */,
+				9E8044A01E5A857D00FA4936 /* ImageAssets.xcassets */,
 				8DCDADB217A6B3CC008AAA28 /* Supporting Files */,
 				B3EB1F131D6F06A400B5FDAD /* Constants.h */,
 			);
@@ -280,10 +280,10 @@
 			files = (
 				8DCDADB617A6B3CC008AAA28 /* InfoPlist.strings in Resources */,
 				8DCDADBE17A6B3CC008AAA28 /* Default.png in Resources */,
+				9E8044A11E5A857D00FA4936 /* ImageAssets.xcassets in Resources */,
 				8DCDADC017A6B3CC008AAA28 /* Default@2x.png in Resources */,
 				8DCDADC217A6B3CC008AAA28 /* Default-568h@2x.png in Resources */,
 				8DCDADC917A6BA34008AAA28 /* MainStoryboard.storyboard in Resources */,
-				9EC23A011E59F23400BCAAAA /* ImageAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +403,8 @@
 		8DCDADC617A6B3CC008AAA28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -422,6 +424,8 @@
 		8DCDADC717A6B3CC008AAA28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
